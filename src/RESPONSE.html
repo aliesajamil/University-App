@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>COMMENT FORM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="photon.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap">
+
+    <!--CSS Design-->
+    <style>
+    body{
+      background: #FAF0DC;
+    }
+      html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+    }
+
+    html::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    html::-webkit-scrollbar-track {
+        background: transparent;
+        }
+
+    html::-webkit-scrollbar-thumb {
+        background: #A67A5B;
+        }
+    .header {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #e8dcb5;
+        -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        padding: 2rem 10%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        z-index: 1000;
+    }
+
+    .header .logo {
+        margin-right: auto;
+        font-size: 2rem;
+        text-transform: capitalize;
+        color: black;
+        font-weight: bolder;
+        font-family: 'Nunito', sans-serif;
+        text-decoration: none;
+    }
+
+    .header .navbar {
+        position: relative;
+
+    }
+
+    .header .navbar #close-navbar {
+        position: absolute;
+        top: 1.5rem;
+        right: 2rem;
+        font-size: 2rem;
+        cursor: pointer;
+        color: black;
+        display: none;
+    }
+    .header .navbar #close-navbar:hover {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    .header .navbar a {
+        margin-right: 2rem;
+        font-size: 2rem;
+        text-transform: capitalize;
+        color: black;
+        text-decoration: none;
+    }
+
+    .header .navbar a:hover {
+        color: white;
+    }
+    h1{
+        font-family: 'Nunito', sans-serif;
+        color:#A67A5B; 
+        font-size: 30px;}
+
+     .mainWrapper{
+        padding:50px;
+     }
+
+     label{
+        font-family: 'Nunito', sans-serif;
+        color:#A67A5B; 
+        font-size: 20px;
+        padding-right: 15px;
+        padding-top: 15px;
+      }
+
+      .form-control:focus{
+        border:5px #A67A5B;
+      }
+
+      .default{
+        margin-top: 30px;
+        cursor: pointer;
+        color:white;
+        background-color: #A67A5B;
+        border:#A67A5B;
+        border-radius: 5px;
+        width: 150px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+
+      <a href="#" class="logo"> <i class=""></i>UniforYou</a>
+   
+      <nav class="navbar">
+         <div id="close-navbar" class="fas fa-times"></div>
+         <a href="HOME.html">Home</a>
+         <a href="#">Comment</a>
+         <a href="#" onclick="self.close()">Exit</a>
+      </nav>
+  </header>
+
+  <!-- FORM CRUDFILE-->
+
+    <div class="mainWrapper">
+    
+      <h1>Type Your Comment</h1>
+
+      <form>
+        <div class="form-group">
+          <label>Name</label>
+          <input id="fileName" type="text" class="form-control" placeholder="example: yourname.txt">
+        </div>
+
+        <div class="form-group">
+          <label>Share your taught</label>
+          <textarea id="fileContents" class="form-control" rows="5"></textarea>
+
+        </div>
+      </form>
+      <button id="btnCreate" class="btn btn-default">Create</button>
+      <button id="btnRead" class="btn btn-default">Read</button>
+      <button id="btnDelete" class="btn btn-default">Delete</button>
+      <button id="btnupdate" class="btn btn-default">Update</button>
+
+    
+    </div>
+
+    <script src="main.js">
+      
+      
+    </script>
+  </body>
+</html>
+
